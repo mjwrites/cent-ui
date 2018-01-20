@@ -46,7 +46,7 @@ export class Main extends Component {
                 component = (
                     <div>
                         <Donation handleDonation={this.handleDonation} value={this.state.value} change={this.handleChange} />
-                        <Payment />
+                        {/* <Payment /> */}
                     </div>
                 )
                 break;
