@@ -1,51 +1,57 @@
 @font-face {
     font-family: 'Gotham';
-    src: url('../fonts/Gotham-Bold-Regular/GothamBoldRegular.ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/Gotham-Bold-Regular/GothamBoldRegular.ttf');
+    /* IE9 Compat Modes */
 }
 
-body{
+body {
     font-family: Gotham;
 }
 
-.background-color{
+.background-color {
     background-color: #4578F8;
     height: 100vh;
     width: 100%;
 }
 
-.title{
-    font-family: Gotham;    
+.title {
+    font-family: Gotham;
     font-size: 130px;
     text-align: center;
-    color: rgb(255, 255, 255);    
+    color: rgb(255, 255, 255);
 }
 
-.landing{
+.landing {
     padding-top: 50px;
 }
 
+
 /* DONATION PAGE */
-.donation-amount{
+
+.donation-amount {
     text-align: center;
     color: #fff;
 }
 
-.donation-amount form{
+.donation-amount form {
     display: flex;
     width: 25rem;
     margin: auto;
 }
 
-.donation-amount button{
+.donation-amount button {
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
-    color:#fff;
+    color: #fff;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
-.donation-amount button:hover{
+.donation-amount button:hover {
     background-color: white;
     color: rgb(69, 120, 248);
 }
 
+.input-group-addon {
+    color: rgb(109, 109, 109);
+}

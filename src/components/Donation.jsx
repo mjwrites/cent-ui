@@ -1,25 +1,15 @@
 import React, { Component } from 'react';
 
 export class Donation extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-        }
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleSubmit(e){
-        e.preventDefault();
-        console.log('Form Submitted')
-    }
-
     render() {
         return (
             <div className="form-group donation-amount">
-                {/* <label >Enter amount:</label> */}
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" className="form-control" id="amount" placeholder="$"/>
-                    <button type="submit" className="btn btn-default"> Donate</button>
+                <form onSubmit={this.props.handleDonation}>
+                    <div className="input-group">
+                        <div className="input-group-addon">$</div>
+                        <input type="number" className="form-control currency" id="amount" placeholder="0.00" value={this.props.value} onChange={this.props.change} />
+                        <button type="submit" className="btn btn-default"> Donate</button>
+                    </div>
                 </form>
             </div>
         )
