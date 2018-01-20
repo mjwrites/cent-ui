@@ -23,3 +23,29 @@ body{
 .landing{
     padding-top: 50px;
 }
+
+/* DONATION PAGE */
+.donation-amount{
+    text-align: center;
+    color: #fff;
+}
+
+.donation-amount form{
+    display: flex;
+    width: 25rem;
+    margin: auto;
+}
+
+.donation-amount button{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color:#fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.donation-amount button:hover{
+    background-color: white;
+    color: rgb(69, 120, 248);
+}
+

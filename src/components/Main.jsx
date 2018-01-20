@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Donation } from './Donation';
 export class Main extends Component {
     render() {
         return (
@@ -7,6 +7,7 @@ export class Main extends Component {
                 <div className="container">
                 <div className="landing">
                     <h1 className="title">Cent.</h1>
+                    <Donation />
                 </div>
                 </div>
             </div>
