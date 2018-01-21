@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="./cent_logo_c_white.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
-  <title>Cent</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../src/public/js/mapdata.js"></script>
+  <script src="../src/public/js/worldmap.js"></script>
+  <title>Cent - Transparent Donation</title>
 </head>
 
 <body>
@@ -14,6 +18,24 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <div id="root"></div>
+  <script>
+    var aec_init = {
+      "client_id": "cc8eb057-7f93-41a5-8f4e-9fb51d835b78",
+      "request_id": "7f6d0887-8346-4c7e-87d1-6f99dcbe490b",
+      "theme": "desktop",
+      "button_color": "dark",
+      "action": "checkout",
+      "locale": "en_US",
+      "country": "US",
+      "callback": "aec_callback_handler",
+      "env": "qa",
+      "dialog_type": "popup",
+      "button_type": "standard",
+      "disable_btn": "false"
+    }
+  </script>
+  <script src="https://icm.aexp-static.com/Internet/IMDC/AmexExpressCheckout/js/2.0/AEC.js">
+  </script>
 </body>
 
 </html>

@@ -8,10 +8,61 @@ body {
     font-family: Gotham;
 }
 
-.background-color {
-    background-color: #4578F8;
-    height: 100vh;
+hr {
+    border-top: 1px solid rgb(228, 228, 228);
+    width: 70%;
+    margin-left: 0;
+}
+
+
+/* Alert */
+
+@keyframes color-animation {
+    0% {
+        background:  rgb(255, 78, 98);
+    }
+    100% {
+        background: rgb(126, 0, 15);
+    }
+}
+
+.alert-info {
+    animation: color-animation 2s infinite linear alternate;
+    background-color: #F63149;
+    border-color: rgba(246, 49, 72, 0);
+    color: white;
+    text-align: center;
+    font-family: FuturaLT !important;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.alert-info span {
+    font-family: FuturaLT-Book !important;
+}
+
+.bg {
+    background-image: url('../img/world.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: -webkit-fill-available;
     width: 100%;
+    position: absolute;
+    z-index: -2;
+    color: white;
+}
+
+.bg:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(18, 19, 58, 0.8);
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 .title {
@@ -22,7 +73,16 @@ body {
 }
 
 .landing {
-    padding-top: 50px;
+    margin-top: 5vh;
+}
+
+
+/* Logo */
+
+.cent_logo {
+    height: 150px;
+    margin: auto;
+    display: block;
 }
 
 
@@ -31,27 +91,181 @@ body {
 .donation-amount {
     text-align: center;
     color: #fff;
+    margin-top: 30px;
 }
 
 .donation-amount form {
     display: flex;
-    width: 25rem;
+    width: 30rem;
     margin: auto;
 }
 
-.donation-amount button {
-    background-color: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    color: #fff;
-    cursor: pointer;
-    margin-left: 2px;
+.donation-amount a {
+    color: white;
+    text-decoration: none;
 }
 
-.donation-amount button:hover {
-    background-color: white;
-    color: rgb(69, 120, 248);
+.donation-amount a:hover {
+    text-decoration: underline;
 }
 
 .input-group-addon {
     color: rgb(109, 109, 109);
+}
+
+.donate-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.donate-btn:hover {
+    background-color: transparent;
+}
+
+.read-about {
+    font-family: FuturaLT-Light;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+/* Blockchain */
+
+.blockchain-div {
+    margin-top: 50px;
+}
+
+.blockchain-section header {
+    font-size: 20px;
+    opacity: 0.9;
+    font-family: FuturaLT-Book;
+}
+
+.blockchain-section .content-sm {
+    width: 50%;
+    padding: 0 2% 2% 0;
+}
+
+.blockchain-section .content {
+    padding: 5% 0% 0% 0%;
+}
+
+.blockchain {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+    margin-top: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0);
+}
+
+.class-row-wrapper {
+    padding: 50px;
+}
+
+.blockchain .row {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    margin: auto;
+}
+
+.blockchain .row .col {
+    display: inline-block;
+    margin: 10px;
+}
+
+.blockchain-section {
+    background: rgba(255, 255, 255, 0);
+}
+
+.blockchain p {
+    font-size: 18px;
+    font-family: FuturaLT-Light;
+}
+
+.blockchain h4 {
+    font-size: 20px;
+    font-family: FuturaLT-Book;
+}
+
+.card {
+    width: 20rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.card-block {
+    -webkit-box-shadow: -1px 0px 23px -2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -1px 0px 23px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: -1px 0px 23px -2px rgba(0, 0, 0, 0.6);
+    line-height: 0.5;
+}
+
+.card-hash {
+    font-size: 15px !important;
+    opacity: 0.8;
+}
+
+.amount-donated {
+    font-family: FuturaLT-Light;
+}
+
+.donation-title {
+    font-family: FuturaLT-Book !important;
+}
+
+.donation-title span {
+    font-family: FuturaLT-Light !important;
+}
+
+.breakdown {
+    float: left
+}
+
+
+/* WorldMap */
+
+.world-map-gallery {
+    margin-top: 50px;
+}
+
+.world-map-gallery .card {
+    margin: 5px 25px;
+    float: left;
+}
+
+.world-map-gallery .card-title{
+    font-size: 1rem;
+}
+
+.world-map-gallery .card-text {
+    font-family: Futuralt-Light;
+}
+
+.world-map-gallery .card-subtext {
+    font-family: FuturaLT;
+}
+
+.gallery-img {
+    height: 300px;
+    width: 500px;
+}
+
+.gallery-container{
+    height: 600px;
+    overflow-y: auto;
 }
